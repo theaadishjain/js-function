@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(30, 60, 114, 0.2);
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+h1 {
+    color: #1e3c72;
+    margin-bottom: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.clock {
+    font-size: 1.2rem;
+    color: #2a5298;
+    margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.counter {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1e3c72;
+    margin: 1.2rem 0;
+    transition: transform 0.2s cubic-bezier(.68,-0.55,.27,1.55), color 0.2s;
+}
+
+.counter.animated {
+    transform: scale(1.2);
+    color: #2a5298;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+button {
+    background: #1e3c72;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(30, 60, 114, 0.08);
+}
+
+button:hover {
+    background: #2a5298;
+    transform: translateY(-2px) scale(1.05);
+}
+
+button:active {
+    background: #16325c;
+}
+
+.note {
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        max-width: 95vw;
+    }
+    .counter {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 1.1rem;
+    }
+} 
